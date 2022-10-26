@@ -1,0 +1,36 @@
+.new-expense__container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.new-expense__control{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bold;
+    flex-wrap: wrap;
+    width: 30%;
+}
+
+.new-expense__control input{
+    width: 100%;
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px;
+}
+
+.new-expense__action{
+    margin-top: 20px;
+}
+
+.new-expense__action button{
+    padding: 10px 20px;
+    border: 5px;
+    border-radius: 2px;
+    color: rgb(241, 237, 241);
+    background-color: rgb(40, 8, 70);
+}

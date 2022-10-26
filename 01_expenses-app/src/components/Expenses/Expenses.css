@@ -1,0 +1,13 @@
+.expenses-container{
+    background-color: rgb(15 29 36);
+    padding: 10px 30px;
+    width: 70%;
+    margin: auto;
+}
+
+@media screen and (max-width: 756px){
+    .expenses-container{
+        padding: 0px;
+        width: 100%;
+    }
+}
