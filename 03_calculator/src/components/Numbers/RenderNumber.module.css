@@ -1,0 +1,4 @@
+.childItem{
+    display: flex;
+    flex-wrap: wrap;
+}
