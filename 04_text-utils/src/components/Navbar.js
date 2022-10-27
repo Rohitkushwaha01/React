@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
+import App from '../App';
 
 const Navbar = function (props) {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
           {props.title}
@@ -31,17 +32,10 @@ const Navbar = function (props) {
               </a>
             </li>
           </ul>
-          <form className="d-flex">
-            <input
-              className="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button className="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
+          <div className="form-check form-switch">
+            <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault" onClick={props.toggle} />
+            <label className={`form-check-label text-${props.mode ==="light" ? "dark" : "light"}`} htmlFor="flexSwitchCheckDefault" >Enable Dark mode</label>
+          </div>
         </div>
       </div>
     </nav>

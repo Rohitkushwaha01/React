@@ -53,7 +53,7 @@ export default function TextForm(props) {
     <div className="mb-3 container mt-5">
       <label htmlFor="mybox" className="form-label h3">{props.heading}</label>
       <textarea className="form-control" id="mybox" rows="10" value={text} onChange={handleOnChange}
-      onFocus={handleOnFocus}></textarea>
+      onClick={handleOnFocus}></textarea>
       <div className="my-2">
         <button className="btn btn-primary m-2" onClick={handleUpperClick}>
             Convert to Uppercase
@@ -77,9 +77,9 @@ export default function TextForm(props) {
     </div>
     <div className="container my-2">
         <h3>Your text Summary</h3>
-        <p>{text.split(" ").length - 1} words, {text.length} character, {0.008 * text.split(" ").length} Minutes need to read</p>
+        <p>{text.split(" ").length} words, {text.length} character, {0.008 * text.split(" ").length} Minutes need to read</p>
         <h3>Preview</h3>
-        <p>{text}</p>
+        <p>{text.length>0?text:"Enter Something to Preview"}</p>
     </div>
     </>
   )
