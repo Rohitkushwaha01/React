@@ -1,0 +1,27 @@
+.input{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.note{
+    width: 40%;
+    padding: 10px 20px;
+}
+
+.btn{
+    border-radius: 5px;
+}
+
+@media screen and (max-width:760px){
+    .note{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:360px){
+    .input{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,11 @@
+.todologo{
+    background-color: rgb(253, 219, 82);
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.todologo h1{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
