@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Card from "../UI/Card";
 import classes from "./Input.module.css";
-import Button from "../UI/Button";
 
 export default function Input(props) {
   const [text, setText] = useState("Enter your Todo");
@@ -10,23 +9,24 @@ export default function Input(props) {
     setText(e.target.value);
   };
 
-  const clickHandler = () => {
+  const clickHandler = (e) => {
+    e.preventDefault();
     props.onAddNote(text);
   };
 
   return (
     <Card>
-      <div className={classes.input}>
-        <input
-          type="text"
-          className={classes.note}
-          placeholder={text}
-          onChange={textHandler}
-        />
-        <Button className={classes.btn} onclick={clickHandler}>
-          Add
-        </Button>
-      </div>
+        <form className={classes.input}>
+          <input
+            type="text"
+            className={classes.note}
+            placeholder={text}
+            onChange={textHandler}
+          />
+          <button className={classes.btn} onClick={clickHandler}>
+            Add
+          </button>
+        </form>
     </Card>
   );
 }
