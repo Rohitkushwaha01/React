@@ -1,0 +1,15 @@
+body{
+    background-color: #8fff80;
+    margin: 0% 10%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: .5px;
+}
+
+h1{
+    text-align: center;
+}
+
