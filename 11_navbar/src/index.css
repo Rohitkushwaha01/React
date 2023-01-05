@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Roboto+Slab:wght@300&display=swap');
+
+body{
+    margin: 0;
+    padding: 30px;
+}
+
+.item,.login{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.item{
+    justify-content: flex-start;
+}
+
+.login{
+    justify-content: flex-end;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    position: relative;
+}
+
+ul{    
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    list-style: none;
+    font-size: 1.2rem;
+    padding-left: 0;
+}
+
+nav ul li:hover{
+    color: #00bd95;
+}
+
+.layer{
+    font-size: 1.5rem;
+    color: #00bd95;
+    margin-right: 20px;
+}
+
+label{
+    font-size: 1.5rem;
+    margin-left: 4px;
+}
+
+.btn{
+    background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+    margin-left: 20px;
+}
+
+.fade{
+    background-color:#8ea494;
+	border:1px solid #8ab897;
+}
+.fade:hover{
+    background-color:#44c767;
+	border:1px solid #18ab29;
+}
+
+.search{
+    display: none;
+}
+
+@media screen and (max-width: 1270px){
+    body{
+        padding: 10px 2px;
+    }
+}
+
+@media screen and (max-width: 1170px){
+    body{
+        padding: 10px 10px;
+    }
+    ul{
+        display: none;
+    }
+    .search{
+        display: inline;
+        padding: 12px 17px;
+        border-radius: 42px;
+        border: 0.5px solid black;
+        background: #ccc;
+        color: white;
+        width: 278px;
+    }
+}
+
+@media screen and (max-width: 870px){
+    nav{
+        display: block;
+        text-align: center;
+    }
+    ul{
+        width: 100%;
+    }
+    .search-form{
+        margin: auto;
+        width: 400px;
+    }
+    .search{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 470px){
+    nav{
+        display: block;
+        text-align: center;
+    }
+    ul{
+        justify-content: space-between;
+    }
+    .search-form{
+        margin: auto;
+        width: 250px;
+    }
+}
